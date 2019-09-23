@@ -6,5 +6,7 @@
 
 module.exports = {
     productionSourceMap: false,
-    base
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/web/'
+    : '/'
   }
